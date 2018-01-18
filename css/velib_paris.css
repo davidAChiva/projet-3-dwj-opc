@@ -1,0 +1,275 @@
+body 
+{
+    font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+    margin: 0 0 0 0;
+    height: 100%;
+}
+h1,h2,h3
+{
+    font-family: "Comic Sans MS", Georgia, sans-serif;
+}
+header
+{
+    margin : auto;
+    width: 100%;
+    background-color: #c9123c;
+    color: white;
+    text-align : center;
+}
+#mainHeader
+{
+    width : 100%;
+    margin : auto;
+    display : flex;
+    justify-content: space-around;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+}
+#banner
+{
+    width: 100%;
+    height: 500px;
+}
+#banner img
+{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+a
+{
+    margin: auto;
+    line-height: 80px;
+    display: inline-block;
+    height: 80px;
+    width : 200px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+a:hover
+{
+    background-color : #0A4770;
+    cursor: pointer;
+}
+h2
+{
+    font-style: italic;
+    padding-left: 10px;
+    background-color: white;
+    color: #0A4770;
+}
+button
+{
+    background-color: #0A4770;
+    color: white;
+    cursor: pointer;
+    height: 85px;
+    width: 170px;
+    font-size: 1.5em;
+    border: 5px white solid;
+}
+#confirm
+{
+    margin-right: 5px;
+}
+#reset
+{
+    margin-left: 5px;
+}
+#mapVelib
+{
+    background-color: #c9123c;
+    display: flex;
+    justify-content: space-around;
+    height: 800px;  
+}
+#map
+{
+    height: 98%;
+    width: 60%;
+    margin-top: 1%;
+    border: 2px #072063 solid;
+    border-radius: 5px;
+}
+#data
+{
+    color: #0A4770;
+    width: 30%;
+    height: 98%;
+    margin-top: 5px;
+}
+#data p
+{
+    font-style: bold;
+}
+#data p span
+{
+    font-style: normal;
+}
+
+#data button:hover
+{
+    background-color: rgba(10, 71, 112, 0.7); 
+}
+
+#blockSign
+{
+    font-size: 1.3em;
+}
+#blockSign p
+{
+    color: white;
+}
+footer
+{ 
+    width: 100%;
+    height: 250px;
+    padding-left : 5px;
+    background-color: #0A4770;
+    color: white;
+}
+footer p
+{
+    font-size: 1.4em;
+}
+#buttonAnnule
+{
+    background-color: #c9123c;
+    height: 90px;
+    width: 180px;
+}
+#buttonAnnule:hover
+{
+    background-color: rgba(201, 18, 60, 0.7)
+}
+/** Suppression du message Loading de jqueryMobile **/
+.ui-loader 
+{
+  display: none;
+}
+
+/** Support téléphone mobile **/
+@media all and (max-width: 767px)
+{
+    #mainHeader
+    {
+        flex-direction: column;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    a
+    {
+        width: 100%;
+        font-size: 1.4em;
+    }
+    #banner
+    {
+        display: none;
+    }
+    #mapVelib
+    {
+        height: 1300px;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    button 
+    {
+        height: 65px;
+        width: 130px;
+    }
+    #map
+    {
+        margin: auto;
+        width: 90%;
+        height: 40%;
+    }
+    #data
+    {
+        margin: auto;
+        margin-top: 20px;
+        font-size : 0.9em;
+        width: 90%;
+        height: 60%;
+    }
+    footer
+    {
+        margin: auto;
+    }  
+}
+
+/** Support tablette **/
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+    body
+    {
+        max-width: 950px;
+    }
+    #mainHeader
+    {
+        flex-direction: column;
+    }
+    nav
+    {
+        margin: auto;
+        flex-direction: column;
+    }
+    #banner
+    {
+        width: 100%;
+        height: 300px;
+    }
+    #mapVelib
+    {
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 1700px;
+    }
+    #data
+    {
+        margin: auto;
+        margin-top: 20px;
+        width: 90%;
+        height: 40%;
+    }
+    #map
+    {
+        margin: auto;
+        width: 90%;
+        height: 40%;
+    }
+    button 
+    {
+        height: 80px;
+        width: 160px;
+    }
+}
+
+/** Support petit écran **/
+@media all and (min-width: 992px) and (max-width: 1200px)
+{
+    #mainHeader
+    {
+        flex-direction: column;
+    }
+    button 
+    {
+        height: 80px;
+        width: 160px;
+    }
+    #map
+    {
+        width : 55%;
+    }
+    #data
+    {
+        width : 35%;
+    }
+}

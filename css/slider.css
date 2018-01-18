@@ -1,0 +1,222 @@
+#diaporama
+{
+    width: 100%;
+    height: 600px;
+    background-color: #0A4770;
+}
+#diaporama h3
+{
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+#diapoTitle
+{
+    text-align: center;
+    color: white;
+}
+#blockImgDesc
+{
+    background: #12649b;
+    border : 10px white groove;
+    border-radius: 5px;
+    width: 80%;
+    height: 500px;
+    margin : auto;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+/** Il est fortement conseillé que height soit < 500 px **/
+
+#diapoImage
+{
+    margin: auto;
+    
+}
+#diapoDesc
+{
+    margin: auto;
+    background-color: white;
+    color: #0A4770;
+    padding: 5px;
+    width: 40%;
+    height: 75%;
+    font-size: 1.5em;
+     
+}
+#iconNextPrevious
+{
+    height: 100px;
+    width: 100%;
+}
+#iconNextPrevious button
+{
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    font-size: 2em;
+    color: #0A4770;
+    padding: 10px;
+    border: 5px #c9123c solid;
+    background-color: white;
+    
+}
+#iconPrevious
+{
+    font-size: 1.6em;
+    position: relative;
+    left: 45px;
+    bottom: 300px;
+    border-radius: 50%;
+}
+#iconNext
+{
+    position: relative;
+    bottom: 300px;
+    left: 88%;
+    border-radius: 50%;
+}
+
+/** Support téléphone mobile **/
+
+@media (max-width: 767px)
+{
+    #diaporama
+    {
+        width: 100%;
+        height: auto;
+        background-color: #0A4770;
+    }
+    #blockImgDesc
+    {
+        flex-direction: column;
+        width : 90%;
+        height: 90%;
+    }
+    #diapoImage 
+    {
+        display : block;
+        margin: auto;
+        width: 95%;
+    }
+    #diapoImage img
+    {
+        width: 100%;
+    }
+    #diapoDesc 
+    {
+        display: none;
+        margin: auto;
+        width: 90%;
+        font-size: 1em;
+        text-align: center;
+    }
+    #diapoDesc img
+    {
+        transform: scale(0.5);
+    }
+    #iconNextPrevious 
+    {
+        text-align: center;
+        margin-top: 15px;
+    }   
+    #iconPrevious 
+    {
+        position: static;
+    }
+    #iconNext
+    {
+        position: static;
+    }
+}
+
+/** Support tablette **/
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    #diaporama
+    {
+        height: 1200px;
+    }
+    #blockImgDesc
+    {
+        flex-direction: column;
+        width: 98%;
+        height: 82%;
+    }
+    #diapoImage
+    {
+        margin : auto;
+        text-align: center;
+        height: 60%;
+        width: 95%;
+    }
+    #diapoImage img
+    {
+        margin: auto;
+    }
+    #diapoDesc 
+    {
+        margin: auto;
+        margin-bottom: 30px;
+        width: 95%;
+        height: 40%
+    }
+    #iconNextPrevious 
+    {
+        text-align: center;
+        margin-top: 15px;
+    }   
+    #iconPrevious 
+    {
+        position: static;
+    }
+    #iconNext
+    {
+        position: static;
+    }
+}
+
+/** Support petit écran **/
+
+@media (min-width: 992px) and (max-width: 1280px)
+{
+    #diaporama
+    {
+        height: 700px;
+    }
+    #blockImgDesc
+    {
+        width: 98%;
+        
+    }
+    #diapoImage
+    {
+        text-align: center;
+        width: 45%;
+    }
+    #diapoDesc
+    {
+        width: 45%;
+    }
+    #diapoImage img
+    {
+        width : 100%;
+        height: 100%;
+        max-height: 400px;
+    }
+    #iconNextPrevious 
+    {
+        text-align: center;
+        margin-top: 15px;
+    }   
+    #iconPrevious 
+    {
+        position: static;
+    }
+    #iconNext
+    {
+        position: static;
+    }
+}
